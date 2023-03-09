@@ -60,7 +60,7 @@ function Sidebar() {
                 {formatDate(nt.date)}
               </span>
               {nt?.description && (
-                <p className="">{getWords(nt.description)}</p>
+               <p className="" style={{ overflowWrap: 'break-word' }}>{getWords(nt.description)}</p>
               )}
             </li>
           ))}
